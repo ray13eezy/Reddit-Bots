@@ -35,7 +35,7 @@ def TDNWRemoveBot():
 ^^If ^^you ^^are ^^not ^^able ^^to ^^read ^^the ^^removal ^^reason ^^please ^^use ^^desktop ^^mode.
     """
     removed = []
-    for submission in r.subreddit(subbie).new(limit=1): #get 100 unapproved posts
+    for submission in r.subreddit(subbie).new(limit=1000): #get 1000 unapproved posts
         if submission.score < 50: # only if they are < 50
             age = now - submission.created_utc
             if age > int(86400): # if it's over 24 hours
