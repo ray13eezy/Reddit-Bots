@@ -19,7 +19,7 @@ print("Checking submissions...")
 def TDNWRemoveBot():
     removal_reason = """Hear me and rejoice, /u/{}. Your post has had the privilege of being removed by the Great Titan. 
                         You may think this is suffering, no. It is salvation. The universal scales tip toward balance because of your sacrifice. 
-                        Smile. For even in death, you have become Children of Thanos.
+                        Smile. For even in death, you have become children of Thanos.
 
  ---
 
