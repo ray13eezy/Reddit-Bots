@@ -17,9 +17,9 @@ print("Bot for r/{}. Removes dead submissions.".format(subbie))
 print("Checking submissions...")
 
 def TDNWRemoveBot():
-    removal_reason = """Hear me and rejoice, /u/{}. You have had the privilege of being saved by the great Thanos. 
-                        You may think this is suffering, no. It is salvation. The universal scale tips toward balance because of your sacrifice. 
-                        Smile. For even in death, you have become children of Thanos. 
+    removal_reason = """Hear me and rejoice, /u/{}. Your post has had the privilege of being removed by the Great Titan. 
+                        You may think this is suffering, no. It is salvation. The universal scales tip toward balance because of your sacrifice. 
+                        Smile. For even in death, you have become Children of Thanos.
 
  ---
 
