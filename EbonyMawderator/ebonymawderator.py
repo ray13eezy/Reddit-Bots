@@ -11,7 +11,7 @@ today = datetime.date.today()
 
 log_post = (r.submission('93ypq5'))
 
-subbie = 'ThanosDidNothingWrong' # sub to operate in
+subbie = 'NO_TOUCHING__lol' # sub to operate in
 moderators = r.subreddit(subbie).moderator()
 print("Bot for r/{}. Removes dead submissions.".format(subbie))
 print("Checking submissions...")
@@ -35,12 +35,12 @@ def TDNWRemoveBot():
 ^^If ^^you ^^are ^^not ^^able ^^to ^^read ^^the ^^removal ^^reason ^^please ^^use ^^desktop ^^mode.
     """
     removed = []
-    for submission in r.subreddit(subbie).new(limit=1000): #get 1000 unapproved posts
+    for submission in r.subreddit(subbie).new(limit=1): #get 1000 unapproved posts
         if submission.score < 50: # only if they are < 50
             age = now - submission.created_utc
-            if age > int(86400): # if it's over 24 hours
-                if submission not in removed:
-                  if submission.author not in moderators:
+            #if age > int(86400): # if it's over 24 hours
+            if submission not in removed:
+                  #if submission.author not in moderators:
                     submission.mod.remove() # remove submission
                     removal_comment = submission.reply(removal_reason.format(submission.author))
                     removal_comment.mod.distinguish(how='yes', sticky=True)
